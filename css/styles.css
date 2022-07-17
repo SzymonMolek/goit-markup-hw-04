@@ -245,7 +245,7 @@ ul
     border-radius: 0px 0px 4px 4px;
 }
 
-.web-content .our-profile .detail .iconBox 
+.web-content .our-profile .detail .iconbox 
 {
         
     display: flex;
@@ -380,7 +380,9 @@ ul
 .web-content .our-team .socialMedia .details {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 32px;
+    gap: 0;
+    width: 100%;    
 }
 
 .web-content .our-team .socialMedia .details .detail 
@@ -388,9 +390,9 @@ ul
     display: inline-flex;
     fill: #afb1b8;
 
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
+    width: 44px;
+    height: 44px;
+    margin-top: 10px;
 
     justify-content: center;
     align-items: center;
@@ -558,7 +560,57 @@ ul
     padding-top: 4px;
 }
 
+/* our-clients */
+
+.web-content .our-clients {
+    width: 100%;
+}
+
+.web-content .our-clients h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-bottom: 50px;
+    color: #212121;
+}
+
+.web-content .our-clients .details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.web-content .our-clients .details .detail .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    fill: #afb1b8;
+}
+
+.web-content .our-clients .details .detail .link:hover,
+.web-content .our-clients .details .detail .link:focus {
+    border: 1px solid #2196f3;
+    fill: #2196f3;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
 /* FOOTER - CONTENT */
+
+div
+{
+    display: block;
+}
 
 .footer 
 {
@@ -700,3 +752,9 @@ ul
     width: 20px;
     height: 20px;
 }
+
+svg
+{
+    background-color: red;
+}
+
