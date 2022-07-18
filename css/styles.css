@@ -57,6 +57,12 @@
     color: var(--hover-focus);
 }
 
+.contact-us-top:focus,
+.contact-us-top:hover
+{
+    fill: var(--top-hover-focus);
+}
+
 .web-header .topbar .main-logo a span 
 {
     color: var(--second-word-logo);
@@ -625,7 +631,9 @@ ul
 }
 
 .web-content .our-clients .details .detail .link:hover,
-.web-content .our-clients .details .detail .link:focus {
+.web-content .our-clients .details .detail .link:focus 
+
+{
     border: 1px solid #2196f3;
     fill: #2196f3;
     transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
