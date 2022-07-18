@@ -167,6 +167,17 @@ ul
     background: var(--body-color);
 }
 
+#switch
+{
+    display: block;
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/people.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .web-content .switch:after 
 {
     display: block;
@@ -191,7 +202,7 @@ ul
     width: 696px;
     margin: auto;
     padding-top: 200px;
-    padding-bottom: 40px;  
+    padding-bottom: 40px;
 }
 
 .web-content .switch button 
@@ -745,16 +756,12 @@ div
     background: var(--top-hover-focus)
 }
 
-.footer .footer-informations .socialMedia
-{
-    fill: var(--fill);
+.join-us {
+    display: inline-flex;
+    text-decoration: none;
 
-    width: 20px;
-    height: 20px;
+    fill: #fff;
+
+    justify-content: center;
+    align-items: center;
 }
-
-svg
-{
-    background-color: red;
-}
-
