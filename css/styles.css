@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     height: 80px;
 }
 
@@ -47,6 +47,7 @@
 
 .web-header .topbar .main-logo a 
 {
+    display: flex;
     color: var(--first-word-logo);
     text-decoration: none;
 }
@@ -55,12 +56,6 @@
 .web-header .topbar .main-logo a:hover
 {
     color: var(--hover-focus);
-}
-
-.contact-us-top:focus,
-.contact-us-top:hover
-{
-    fill: var(--top-hover-focus);
 }
 
 .web-header .topbar .main-logo a span 
@@ -118,6 +113,19 @@
     padding-left: 50px;
 }
 
+.svg-top-phone,
+.svg-top-mail 
+{
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.top-icon :focus,
+.top-icon :hover 
+{
+    fill: var(--top-hover-focus);
+}
+
 .web-header .topbar .contact-us a 
 {
     text-decoration: none;
@@ -126,7 +134,7 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--top-contact-us);
-    fill: var(--top-contact-us);
+    /* fill: var(--top-contact-us); */
     justify-content: center;
     align-items: center;
 }
@@ -134,7 +142,7 @@
 .web-header .topbar .contact-us a:hover,
 .web-header .topbar .contact-us a:focus 
 {
-    color: var(--top-hover-focus)
+    color: var(--top-hover-focus);
 }
 
 /* END OF HEADER / TOPBAR */
@@ -193,9 +201,10 @@ ul
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/people.jpg);
+    background-size: auto;
 
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .web-content .switch:after 
@@ -787,22 +796,4 @@ div
 
     justify-content: center;
     align-items: center;
-}
-
-.svg-top-phone 
-{
-    display: inline;
-
-    margin-right: 10px;
-    width: 16;
-    height: 12;
-}
-
-.svg-top-mail
-{
-    display: inline;
-
-    margin-right: 10px;
-    width: 10;
-    height: 16;
 }
