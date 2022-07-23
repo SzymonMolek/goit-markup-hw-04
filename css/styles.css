@@ -120,6 +120,11 @@
     margin-right: 10px;
 }
 
+.top-icon
+{
+    fill: var(--top-contact-us);
+}
+
 .top-icon :focus,
 .top-icon :hover 
 {
@@ -132,9 +137,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
+    letter-spacing: .02em;
     color: var(--top-contact-us);
-    /* fill: var(--top-contact-us); */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
